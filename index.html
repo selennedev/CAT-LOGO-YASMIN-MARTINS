@@ -3,69 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Catálogo de procedimentos Yasmin Martins. Sobrancelhas, micropigmentação e extensão de cílios.">
+  <meta name="description" content="Catálogo digital de procedimentos Yasmin Martins. Sobrancelhas, micropigmentação e extensão de cílios.">
   <meta name="theme-color" content="#17120f">
-  <title>Yasmin Martins | Catálogo de Procedimentos</title>
+  <title>Yasmin Martins | Catálogo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Yasmin Martins, início"><span class="brand-mark">YM</span><span>Yasmin Martins</span></a>
-    <nav class="nav" aria-label="Navegação principal"><a href="#procedimentos">Procedimentos</a><a href="#informacoes">Informações</a><a href="#pagamento">Pagamento</a></nav>
-    <a class="header-cta" href="#agendamento">Agendamento <span>↗</span></a>
+    <a class="brand" href="#inicio" aria-label="Yasmin Martins, início">
+      <span class="brand-mark">YM</span>
+      <span>Yasmin Martins</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#catalogo">Procedimentos</a>
+      <a href="#informacoes">Informações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="header-cta" href="#catalogo">Ver procedimentos <span>↗</span></a>
   </header>
+
   <main>
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <p class="eyebrow">CATÁLOGO EXCLUSIVE · YASMIN MARTINS</p>
-        <h1>Realce o seu olhar.<br><em>Escolha seu estilo.</em></h1>
-        <p class="hero-text">Conheça os procedimentos, técnicas, valores e orientações do catálogo Yasmin Martins em uma experiência digital clara e elegante.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#procedimentos">Ver procedimentos <span>↓</span></a><a class="text-link" href="#agendamento">Guia de agendamento <span>↗</span></a></div>
+        <p class="eyebrow">CATÁLOGO DIGITAL · YASMIN MARTINS</p>
+        <h1>Realce o que<br><em>te faz única.</em></h1>
+        <p class="hero-text">Sobrancelhas, micropigmentação e extensão de cílios com procedimentos apresentados de forma clara, elegante e personalizada.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#catalogo">Explorar procedimentos <span>↓</span></a>
+          <a class="text-link" href="#informacoes">Ver informações <span>↗</span></a>
+        </div>
       </div>
-      <div class="hero-art" aria-label="Catálogo Yasmin Martins">
-        <div class="hero-poster"><span class="poster-script">Yasmin Martins</span><strong>CATÁLOGO</strong><small>E X C L U S I V E</small><div class="poster-monogram">YM</div></div>
-        <div class="hero-circle">PROCEDIMENTOS<br><span>↓</span></div>
+      <div class="hero-art">
+        <div class="hero-image-wrap">
+          <img src="assets/hero.jpg" alt="Yasmin Martins" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')">
+          <div class="hero-fallback"><span>YM</span><strong>Yasmin Martins</strong><small>CATÁLOGO</small></div>
+          <div class="floating-card"><span>YASMIN MARTINS</span><strong>BEAUTY</strong></div>
+        </div>
+        <div class="hero-circle">EXPLORE<br><span>↓</span></div>
       </div>
     </section>
+
     <section class="intro">
-      <p class="eyebrow">SOBRANCELHAS · MICROPIGMENTAÇÃO · CÍLIOS</p>
-      <div><h2>Beleza com técnica,<br><em>cuidado e personalidade.</em></h2><p>O catálogo reúne procedimentos personalizados para sobrancelhas, micropigmentação e extensão de cílios, com valores e orientações apresentados no material original.</p></div>
+      <p class="eyebrow">PROCEDIMENTOS PERSONALIZADOS</p>
+      <div>
+        <h2>Beleza com técnica,<br><em>cuidado e propósito.</em></h2>
+        <p>Conheça os procedimentos do catálogo, valores, tempos médios e informações importantes antes de agendar.</p>
+      </div>
     </section>
-    <section class="catalog-section" id="procedimentos">
-      <div class="section-heading"><div><p class="eyebrow">NOSSOS PROCEDIMENTOS</p><h2>Escolha seu procedimento</h2></div><div class="filters" id="filters" aria-label="Filtros do catálogo"></div></div>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CATÁLOGO</p>
+          <h2>Procedimentos</h2>
+        </div>
+        <div class="filters" id="filters" aria-label="Filtrar procedimentos"></div>
+      </div>
       <div class="catalog-grid" id="catalog-grid"></div>
     </section>
-    <section class="info-dark" id="informacoes">
-      <div class="section-heading dark-heading"><div><p class="eyebrow">INFORMAÇÕES IMPORTANTES</p><h2>Para uma experiência<br><em>tranquila e bem cuidada.</em></h2></div></div>
+
+    <section class="info-section" id="informacoes">
+      <div class="section-heading info-heading">
+        <div>
+          <p class="eyebrow">ANTES DE AGENDAR</p>
+          <h2>Informações<br><em>importantes.</em></h2>
+        </div>
+        <p>Para extensão de cílios, o catálogo recomenda comparecer sem maquiagem na região dos olhos, evitar compromissos próximos e seguir os cuidados indicados após a aplicação.</p>
+      </div>
       <div class="info-grid">
-        <article><span>01</span><h3>Antes do procedimento</h3><p>Venha sem maquiagem na região dos olhos, se possível. Escolha um dia tranquilo para aproveitar sua experiência com calma e conforto.</p></article>
-        <article><span>02</span><h3>Cuidados após a aplicação</h3><p>Não use rímel, delineador ou produtos à prova d’água. Evite coçar, puxar ou esfregar os olhos. Evite sauna, piscina, vapor e banhos muito quentes.</p></article>
-        <article><span>03</span><h3>Manutenções</h3><p>Realize a manutenção a cada 20 a 30 dias. Após 30 dias, é considerada nova aplicação. Com menos de 45% dos fios, também será considerada nova aplicação.</p></article>
-        <article><span>04</span><h3>Manutenção de outra profissional</h3><p>Não é realizada manutenção em extensões aplicadas por outras profissionais, garantindo qualidade e segurança em cada procedimento.</p></article>
+        <article><span>01</span><h3>Horário</h3><p>Agende em um momento tranquilo, sem compromissos próximos, para aproveitar a experiência com atenção e cuidado.</p></article>
+        <article><span>02</span><h3>Pontualidade</h3><p>Há tolerância de até 15 minutos de atraso. Depois disso, o horário é cancelado e deve ser reagendado.</p></article>
+        <article><span>03</span><h3>Acompanhantes</h3><p>Evite acompanhantes. Se necessário, o catálogo orienta limitar-se a apenas uma pessoa.</p></article>
+        <article><span>04</span><h3>Sinal</h3><p>É solicitado sinal de R$50,00 para confirmar a reserva, abatido do total do serviço.</p></article>
       </div>
     </section>
-    <section class="guide" id="agendamento">
-      <div class="guide-intro"><p class="eyebrow">GUIA DE AGENDAMENTO</p><h2>Detalhes que fazem<br><em>diferença.</em></h2><p>Informações do catálogo para organizar seu atendimento com mais tranquilidade.</p></div>
-      <div class="guide-grid">
-        <article><span>◷</span><h3>Horário</h3><p>Agende em um momento tranquilo, sem compromissos próximos.</p></article>
-        <article><span>15'</span><h3>Pontualidade</h3><p>É tolerado até 15 minutos de atraso. Após esse tempo, o horário é cancelado e deve ser reagendado conforme disponibilidade.</p></article>
-        <article><span>1</span><h3>Acompanhante</h3><p>Evite trazer acompanhantes. Se necessário, limite-se a apenas uma pessoa.</p></article>
-        <article><span>R$50</span><h3>Sinal de agendamento</h3><p>É solicitado um sinal de R$50,00 para confirmar a reserva, abatido do total do serviço.</p></article>
+
+    <section class="care-section">
+      <div class="care-copy">
+        <p class="eyebrow">EXTENSÃO DE CÍLIOS</p>
+        <h2>Cuidados que<br><em>fazem diferença.</em></h2>
       </div>
-      <p class="fine-print">Cancelamentos com menos de 24h de antecedência ou não comparecimento implicam na perda do sinal como taxa de cancelamento.</p>
+      <div class="care-list">
+        <div><strong>Antes</strong><p>Venha sem maquiagem na região dos olhos, se possível.</p></div>
+        <div><strong>Após a aplicação</strong><p>Não use rímel, delineador ou produtos à prova d'água. Evite coçar, puxar ou esfregar os olhos.</p></div>
+        <div><strong>Manutenção</strong><p>O catálogo orienta manutenção a cada 20 a 30 dias. Após 30 dias, é considerada nova aplicação.</p></div>
+        <div><strong>Outra profissional</strong><p>Não são realizadas manutenções em extensões aplicadas por outras profissionais.</p></div>
+      </div>
     </section>
-    <section class="payment" id="pagamento">
-      <div><p class="eyebrow">FORMAS DE PAGAMENTO</p><h2>Facilidade para<br><em>finalizar.</em></h2></div>
-      <div class="payment-list"><div><strong>Cartão</strong><span>Crédito e débito</span></div><div><strong>2× sem juros</strong><span>Parcelamento dos cílios no cartão</span></div><div><strong>Dinheiro</strong><span>Pagamento à vista</span></div><div><strong>Pix</strong><span>Pagamento via Pix</span></div></div>
+
+    <section class="payment-section">
+      <p class="eyebrow">FORMAS DE PAGAMENTO</p>
+      <div class="payment-items"><span>Cartão de crédito e débito</span><span>Cílios em até 2× sem juros</span><span>Dinheiro</span><span>Pix</span></div>
     </section>
-    <section class="statement"><div class="statement-inner"><p class="eyebrow">YASMIN MARTINS</p><h2>Seu olhar,<br><em>do seu jeito.</em></h2><a class="button button-light" href="#procedimentos">Explorar procedimentos <span>↗</span></a></div></section>
+
+    <section class="statement">
+      <div class="statement-inner">
+        <p class="eyebrow">YASMIN MARTINS</p>
+        <h2>Seu olhar,<br><em>sua assinatura.</em></h2>
+        <a class="button button-light" href="#contato">Quero agendar <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div>
+        <p class="eyebrow">CONTATO</p>
+        <h2>Vamos conversar?</h2>
+        <p>Escolha um canal para tirar dúvidas e consultar disponibilidade.</p>
+      </div>
+      <div class="contact-links">
+        <a href="#" onclick="return false">WhatsApp <span>↗</span></a>
+        <a href="#" onclick="return false">Instagram <span>↗</span></a>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><span>© 2026 Yasmin Martins</span><span>Catálogo de procedimentos</span></footer>
-  <div class="modal" id="modal" aria-hidden="true"><button class="modal-close" id="modal-close" aria-label="Fechar">×</button><div class="modal-content"><div class="modal-visual" id="modal-visual"></div><div class="modal-info"><p class="eyebrow" id="modal-category"></p><h2 id="modal-title"></h2><p class="modal-price" id="modal-price"></p><p id="modal-description"></p><div class="modal-meta" id="modal-meta"></div></div></div></div>
+
+  <footer class="footer">
+    <span>© 2026 Yasmin Martins</span>
+    <span>Catálogo digital</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+    <div class="modal-content">
+      <div class="modal-visual" id="modal-visual"><div class="visual-inner"><span>YM</span></div></div>
+      <div class="modal-info">
+        <p class="eyebrow" id="modal-category"></p>
+        <h2 id="modal-title"></h2>
+        <strong class="modal-price" id="modal-price"></strong>
+        <p id="modal-description"></p>
+        <div class="modal-meta" id="modal-meta"></div>
+        <a class="button button-dark" href="#contato" id="modal-contact">Tenho interesse <span>↗</span></a>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
