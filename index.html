@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo digital Yasmin Martins.">
+  <meta name="theme-color" content="#17120f">
+  <title>Yasmin Martins | Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Yasmin Martins, início">
+      <span class="brand-mark">YM</span>
+      <span>Yasmin Martins</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="header-cta" href="#catalogo">Ver catálogo <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">CATÁLOGO DIGITAL · 2026</p>
+        <h1>Escolhas que<br><em>falam por você.</em></h1>
+        <p class="hero-text">Explore a seleção Yasmin Martins em uma experiência simples, elegante e feita para encontrar seus favoritos.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#catalogo">Explorar catálogo <span>↓</span></a>
+          <a class="text-link" href="#contato">Falar com Yasmin <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Destaque do catálogo">
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1200&q=85" alt="Seleção de peças em um ambiente elegante">
+          <div class="floating-card">
+            <span>YASMIN MARTINS</span>
+            <strong>CATÁLOGO</strong>
+          </div>
+        </div>
+        <div class="hero-circle">SCROLL<br><span>↓</span></div>
+      </div>
+    </section>
+
+    <section class="intro" id="sobre">
+      <p class="eyebrow">UMA CURADORIA ESPECIAL</p>
+      <div>
+        <h2>Detalhes que transformam<br><em>uma escolha em experiência.</em></h2>
+        <p>Uma vitrine digital pensada para apresentar cada item com clareza, personalidade e espaço para você escolher no seu ritmo.</p>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COLEÇÃO</p>
+          <h2>Catálogo</h2>
+        </div>
+        <div class="filters" id="filters" aria-label="Filtros do catálogo"></div>
+      </div>
+      <div class="catalog-grid" id="catalog-grid"></div>
+    </section>
+
+    <section class="statement">
+      <div class="statement-inner">
+        <p class="eyebrow">YASMIN MARTINS</p>
+        <h2>Seu próximo<br><em>favorito está aqui.</em></h2>
+        <a class="button button-light" href="#contato">Quero conhecer <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div>
+        <p class="eyebrow">ENTRE EM CONTATO</p>
+        <h2>Vamos conversar?</h2>
+        <p>Escolha um canal e fale diretamente com Yasmin.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Yasmin Martins</span>
+    <span>Catálogo digital</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="">
+      <div class="modal-info">
+        <p class="eyebrow" id="modal-category"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <a class="button button-dark" id="modal-contact" href="#contato">Tenho interesse <span>↗</span></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
